@@ -78,8 +78,10 @@ section {
 #grid-game {
     margin: 0 auto;
     background-color: aliceblue;
-    width: 62vh;
-    height: 62vh;
+    width: 62vw;
+    height: 62vw;
+    max-width: 1000px;
+    max-height: 1000px;
     display: grid;
     border: 5px solid rgb(122, 122, 122);
     box-shadow: 0 0 10px white;
