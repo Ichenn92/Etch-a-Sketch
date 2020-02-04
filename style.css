@@ -80,17 +80,11 @@ section {
     background-color: aliceblue;
     width: 62vw;
     height: 62vw;
-    max-width: 1000px;
-    max-height: 1000px;
+    max-width: 745px;
+    max-height: 745px;
     display: grid;
     border: 5px solid rgb(122, 122, 122);
     box-shadow: 0 0 10px white;
-}
-@media (max-width:900px) {
-    #grid-game {
-        width: 99vw;
-        height: 99vw;
-    }
 }
 #grid-game > div {
     border: 1px solid rgb(221, 221, 221);;
@@ -117,3 +111,37 @@ footer {
     vertical-align: middle;
 }
 
+
+@media (max-width:745px) {
+    header {
+        font-size: 25px;
+    }
+
+    #grid-game {
+        width: 99vw;
+        height: 99vw;
+    }
+    .controller {
+        display: flex;
+        justify-content: center;
+    }
+    .controller > button {
+        grid-template-columns: repeat(4, 1fr);
+        margin: 15px 5px;
+        width: 23vw;
+        height: 23vw;
+    }
+    .grid > button {
+        margin: 15px 5px;
+        width: 23vw;
+        height: 23vw;
+    }
+    footer {
+        padding: 10px;
+        font-size: 25px;
+    }
+@media (max-width:745px) {
+    .controller > button {
+        font-size: 15px;
+    }
+}
